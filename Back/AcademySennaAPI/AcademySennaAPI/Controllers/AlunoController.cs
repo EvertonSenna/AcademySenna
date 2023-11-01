@@ -8,9 +8,9 @@ namespace AcademySennaAPI.Controllers
     public class AlunoController : ControllerBase
     {
         [HttpPost(Name = "CreateAluno")]
-        public string CreateAluno(Aluno objetoAluno)
+        public ActionResult CreateAluno(Aluno objetoAluno)
         {
-            return "Aluno Criado com sucesso";
+            return Ok("Aluno Criado com sucesso");
         }
 
         [HttpGet(Name = "GetAlunoByName")]
